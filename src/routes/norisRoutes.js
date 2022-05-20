@@ -9,7 +9,7 @@ norisRouter.get('/joke', async (req, res) => {
   // fetch data from https://api.chucknorris.io/jokes/random
   // return a joke to user
   const response = await fetch('https://api.chucknorris.io/jokes/random');
-  const data = response.json();
+  const data = await response.json();
   const letsReturn = {
     joke: data.value,
     iconUrl: data.icon_url,
