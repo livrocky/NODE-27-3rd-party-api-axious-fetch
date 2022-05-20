@@ -17,4 +17,6 @@ norisRouter.get('/joke', async (req, res) => {
   res.json(letsReturn);
 });
 
+// GET
+
 module.exports = norisRouter;
