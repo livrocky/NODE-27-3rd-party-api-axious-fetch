@@ -4,8 +4,7 @@ const reqresRouter = express.Router();
 
 const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args));
 
-// POST /create-user {name, ocuppation}
-
+// POST /create-user  {name, ocupation}
 reqresRouter.post('/create-user', async (req, res) => {
   const newUserObj = {
     name: req.body.name,
